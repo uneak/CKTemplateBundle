@@ -1,0 +1,9 @@
+services:
+
+    test.cktemplate:
+        class: Uneak\CKTemplateBundle\Template\TestCkTemplate
+        arguments:
+            - @twig
+            - {lastName: "Galoyer"}
+        tags:
+            -  { name: cktemplate.template }

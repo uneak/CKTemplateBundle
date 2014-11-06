@@ -1,0 +1,17 @@
+parameters:
+    cktemplate_chain.class: Uneak\CKTemplateBundle\Service\CKTemplateChain
+    cktemplate_manager.class: Uneak\CKTemplateBundle\Model\CKTemplateManager
+    
+services:
+    cktemplate_chain:
+        class: %cktemplate_chain.class%
+        
+    cktemplate_manager:
+        class: %cktemplate_manager.class%
+        arguments:
+            - @cktemplate_chain
+            
+    twig.stringloader:
+        class: Twig_Loader_String
+        tags:
+            - { name: twig.loader }
