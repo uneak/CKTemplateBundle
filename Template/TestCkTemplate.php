@@ -1,8 +1,8 @@
 <?php
 
-namespace Noviris\CKTemplateBundle\Template;
+namespace Uneak\CKTemplateBundle\Template;
 
-use Noviris\CKTemplateBundle\Model\CKTemplateTwig;
+use Uneak\CKTemplateBundle\Model\CKTemplateTwig;
 
 class TestCkTemplate extends CKTemplateTwig {
 	
